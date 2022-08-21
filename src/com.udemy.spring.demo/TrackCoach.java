@@ -1,8 +1,8 @@
 package com.udemy.spring.demo;
 
-public class BaseBallCoach implements Coach {
+public class TrackCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return "workout for 30 min";
+        return "run for 5 km";
     }
 }
