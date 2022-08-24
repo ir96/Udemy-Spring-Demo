@@ -2,6 +2,6 @@ package com.udemy.spring.demo;
 
 public interface Coach {
 
-    String getDailyWorkout();
-
+    public String getDailyWorkout();
+    public String getDailyFortune();
 }

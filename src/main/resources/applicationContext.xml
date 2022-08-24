@@ -22,10 +22,16 @@
 <!--     class="com.udemy.spring.demo.BaseBallCoach">-->
 <!--    </bean>-->
 
-    <bean id="myCoach"
-          class="com.udemy.spring.demo.CricketCoach">
+    <!-- define the dependency-->
+    <bean id="myFortune"
+     class="com.udemy.spring.demo.HappyFortuneService">
     </bean>
-    
+    <bean id="myCoach"
+          class="com.udemy.spring.demo.TrackCoach">
+        <!-- set up constructor injection-->
+        <constructor-arg ref="myFortune"/>
+    </bean>
+
 </beans>
 
 
