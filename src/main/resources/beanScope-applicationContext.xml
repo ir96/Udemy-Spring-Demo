@@ -18,7 +18,8 @@
           class="com.udemy.spring.demo.HappyFortuneService">
     </bean>
     <bean id="myCoach"
-          class="com.udemy.spring.demo.TrackCoach">
+          class="com.udemy.spring.demo.TrackCoach"
+          scope="prototype">
         <!-- set up constructor injection-->
         <constructor-arg ref="myFortune"/>
     </bean>
