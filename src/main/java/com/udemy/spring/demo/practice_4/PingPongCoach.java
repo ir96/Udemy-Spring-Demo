@@ -9,4 +9,9 @@ public class PingPongCoach implements Coach {
     public String getDailyWorkout() {
         return "\nPractice ping-pong game regularly\n";
     }
+
+    @Override
+    public String getDailyFortune() {
+        return null;
+    }
 }
