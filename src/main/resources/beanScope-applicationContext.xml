@@ -9,10 +9,6 @@
 
     <!-- Define your beans here -->
 
-    <!--    <bean id="myCoach"-->
-    <!--     class="com.udemy.spring.demo.BaseBallCoach">-->
-    <!--    </bean>-->
-
     <!-- define the dependency-->
     <bean id="myFortune"
           class="com.udemy.spring.demo.HappyFortuneService">
@@ -23,6 +19,24 @@
         <!-- set up constructor injection-->
         <constructor-arg ref="myFortune"/>
     </bean>
+
+    <bean id="singletonBeanScope"
+          class="com.udemy.spring.demo.practice_2.RandomFortuneService">
+    </bean>
+    <bean id="singletonSwimmingCoach"
+          class="com.udemy.spring.demo.practice_2.SwimmingCoach">
+          <constructor-arg ref="singletonBeanScope"/>
+    </bean>
+
+    <bean id="prototypeBeanScope"
+          class="com.udemy.spring.demo.practice_2.RandomFortuneService">
+    </bean>
+    <bean id="prototypeSwimmingCoach"
+          class="com.udemy.spring.demo.practice_2.SwimmingCoach"
+          scope="prototype">
+        <constructor-arg ref="prototypeBeanScope"/>
+    </bean>
+
 </beans>
 
 
