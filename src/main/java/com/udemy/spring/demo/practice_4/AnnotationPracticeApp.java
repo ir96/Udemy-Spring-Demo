@@ -1,17 +1,18 @@
-package com.udemy.spring.demo.SpringAnnotations;
+package com.udemy.spring.demo.practice_4;
 
+import com.udemy.spring.demo.SpringAnnotations.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class AnnotationApp {
+public class AnnotationPracticeApp {
     public static void main(String[] args) {
-        //read spring config file
+        //load the spring config file
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("annotationsApplicationContext.xml");
 
-        //get the bean from the spring container
-        Coach theCoach = context.getBean("tennisCoach", Coach.class);
+        //get the bean from spring container
+        Coach theCoach = context.getBean("pingPongCoach", Coach.class);
 
-        //call a method on the bean
+        //call the methods on the bean
         System.out.println(theCoach.getDailyWorkout());
 
         //close the context

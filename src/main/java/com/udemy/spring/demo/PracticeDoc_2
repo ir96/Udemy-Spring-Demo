@@ -1,4 +1,4 @@
-Practice Activity #2 - Dependency Injection with XML Configuration
+//** Practice Activity #2 - Dependency Injection with XML Configuration
 
 1. Define a new implementation for the FortuneService.
 
@@ -11,10 +11,19 @@ Practice Activity #2 - Dependency Injection with XML Configuration
 3. Test your application to verify you are retrieving random fortunes.
 
 
-**Practice Activity #3 - Bean Scopes with XML Configuration
+//** Practice Activity #3 - Bean Scopes with XML Configuration
 
 1. Add bean scopes to your new Coach implementation that you created in one of the previous activities.
 
 2. Test singleton scope and prototype scope as I did in the videos.
 
 3. Verify that the bean scopes are being applied as desired.
+
+
+//** Practice Activity #4 - Inversion of Control with Java Annotations
+
+1. Define a new Coach implementation using Annotations
+
+2. Reference the new coach implementation in your main application.
+
+3. Test your application to verify you are getting information from your new coach implementation.
