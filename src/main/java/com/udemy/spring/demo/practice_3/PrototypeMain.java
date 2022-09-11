@@ -1,6 +1,6 @@
 package com.udemy.spring.demo.practice_3;
 
-import com.udemy.spring.demo.Coach;
+import com.udemy.spring.demo.springBasics.Coach;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class PrototypeMain {

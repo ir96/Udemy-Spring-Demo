@@ -1,4 +1,4 @@
-package com.udemy.spring.demo;
+package com.udemy.spring.demo.springBasics;
 
 public class TrackCoach implements Coach {
     private FortuneService fortuneService;

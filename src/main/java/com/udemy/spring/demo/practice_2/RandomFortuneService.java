@@ -1,6 +1,6 @@
 package com.udemy.spring.demo.practice_2;
 
-import com.udemy.spring.demo.FortuneService;
+import com.udemy.spring.demo.springBasics.FortuneService;
 
 import java.util.Random;
 
