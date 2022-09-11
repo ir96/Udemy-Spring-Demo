@@ -19,7 +19,8 @@
     </bean>
     <bean id="myCoach"
           class="com.udemy.spring.demo.TrackCoach"
-          scope="prototype">
+          init-method="doMyStartStuff"
+          destroy-method="doMyCleanStuff">
         <!-- set up constructor injection-->
         <constructor-arg ref="myFortune"/>
     </bean>
