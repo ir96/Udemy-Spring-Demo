@@ -1,6 +1,7 @@
 package com.udemy.spring.demo.SpringAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -8,6 +9,7 @@ public class TennisCoach implements Coach{
 
     //Field Injection using java Reflection method
     @Autowired
+    @Qualifier("randomFortuneService")
     private FortuneService fortuneService;
 
     //define a default constructor
