@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")// without scope its default(Singleton) class
+@Scope("singleton")// without scope its default(Singleton) class
 public class TennisCoach implements Coach{
 
     //Field Injection using java Reflection method
