@@ -2,11 +2,12 @@ package com.udemy.spring.demo.SpringAnnotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 @Component
-@Scope("singleton")// without scope its default(Singleton) class
 public class TennisCoach implements Coach{
 
     //Field Injection using java Reflection method
@@ -17,6 +18,18 @@ public class TennisCoach implements Coach{
     //define a default constructor
     public TennisCoach() {
         System.out.println(">> inside default constructor");
+    }
+
+    //define my init method
+    @PostConstruct
+    public void doMyStartStuff() {
+        System.out.println(">>TennisCoach: inside of doMyStartStuff - @PostConstruct");
+    }
+
+    //define my destroy method
+    @PreDestroy
+    public void doMyCleanupStuff() {
+        System.out.println(">> Tennis Coach: inside cleanUpStuff - @PreDestroy");
     }
 
     /*
