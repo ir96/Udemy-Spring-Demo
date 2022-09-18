@@ -1,3 +1,5 @@
+https://www.luv2code.com/downloads/udemy-spring-hibernate/solution-practice-activities.zip
+
 //** Practice Activity #2 - Dependency Injection with XML Configuration
 
 1. Define a new implementation for the FortuneService.
@@ -51,3 +53,18 @@ C). When the getFortune() method is called it would return a random fortune from
 2. In the @PostConstruct code, read the fortunes from a text file (.txt).
 
 3. Test your application and verify your @PostConstruct code is being executed. Hint, add some println statements.
+
+
+//** Practice Activity #7 - Inversion of Control and Dependency Injection with Java Code
+
+  *Note: In this practice activity, do not use component scanning.
+
+1. Create a new Coach implementation.
+
+2. Create a new fortune service implementation (return a single hard-coded fortune)
+
+3. Create a Java configuration class to perform IoC and DI with those classes.
+
+4. Develop a main application to retrieve your coach implementation.
+
+5. Test your application and verify your coach implementation is wired up as desired.
