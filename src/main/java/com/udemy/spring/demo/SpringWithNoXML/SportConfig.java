@@ -3,9 +3,11 @@ package com.udemy.spring.demo.SpringWithNoXML;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
-@ComponentScan("com.udemy.spring.demo.SpringWithNoXML")
+//@ComponentScan("com.udemy.spring.demo.SpringWithNoXML")
+@PropertySource("classpath:sport.properties")
 public class SportConfig {
 
     //define bean for our sad fortune service
