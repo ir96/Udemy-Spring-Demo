@@ -11,6 +11,17 @@ public class HomeController {
         return "menu";
     }
 
+    //need a controller method to show the initial HTML form
+    @RequestMapping("/showForm")
+    public String showForm() {
+        return "helloWorld-form";
+    }
+
+    //need a controller method to process the HTML form
+    @RequestMapping("/processForm")
+    public String processForm() {
+        return "helloWorld";
+    }
 
 
 }
