@@ -10,6 +10,11 @@
               placeholder="what is your name?" />
             <input type ="submit"/>
       </form>
+      <form action="processForm/v2" method="GET">
+                  <input type="text" name="studentName"
+                    placeholder="what is your name?" />
+                  <input type ="submit"/>
+      </form>
   </body>
 
 </html>
